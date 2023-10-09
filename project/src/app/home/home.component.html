@@ -2,43 +2,69 @@
 
 <div class="border">
   <div class="container">
-    <!-- Start and Destination of departure-->
-    <div>
-      <span>From</span>
-      <select>
-        <option>A</option>
-        <option>B</option>
-        <option>C</option>
-      </select>
-    </div>
-    <div>
-      <span>To</span>
-      <select class="form-select" aria-label="Default select example">
-  <option selected>Open this select menu</option>
-  <option value="1">One</option>
-  <option value="2">Two</option>
-  <option value="3">Three</option>
-</select>
-    </div>
+    <form class="d-flex">
+      <!-- Start and Destination of departure-->
+      <div class="m-3">
+        <label for="fromDeparture" class="form-label">From</label>
+        <select class="form-select" id="fromDeparture">
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+      <div class="m-3">
+        <label for="toDeparture" class="form-label">To</label>
+        <select class="form-select" id="toDeparture">
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
 
-    <!-- Time to departure-->
-    <div>
-      <label>Start date</label>
-      <input type="date" placeholder="12-12-1000">
-    </div>
+      <!-- Time to departure-->
+      <div class="m-3">
+        <label for="dateDeparture" class="form-label">Departure</label>
+        <input class="form-control" type="date">
+      </div>
 
-    <div>
-      <label>End date</label>
-      <input type="date" placeholder="12-12-1000">
-    </div>
+      <!-- Companies allowed in site-->
+      <div class="m-3">
+        <label for="companies" class="form-label">Companies</label>
+        <select class="form-select" id="toDeparture">
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+
+      <div class="mt-5">
+        <button type="submit" class="btn btn-primary">Search</button>
+      </div>
+    </form>
   </div>
 
-  <!-- Companies allowed in site-->
-  <div>
-    <label>Companies</label>
-    <select>
-      <option>Frecciarossa</option>
-      <option>Trenitalia</option>
-    </select>
+  <br>
+  <!-- Share travels-->
+  <div class="container">
+    <label class="form-label">Shared trips</label>
+    <div class="d-flex">
+      <div class="card m-2" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Venice</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+      <div class="card m-2" style="width: 18rem;">
+        <img src="../../../src/media/colosseum.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Rome</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
