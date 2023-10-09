@@ -1,23 +1,31 @@
-<p>
-  <mat-toolbar color="primary">
-   <mat-toolbar-row>
-    <div>
-      <span>LOGO</span>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">LOGO</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">My travels</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">My frinds</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">My groups</a>
+        </li>
+      </ul>
+      <div class="d-flex p-2">
+        <span class="material-symbols-outlined p-2">
+          person
+        </span>
+        <span class="material-symbols-outlined p-2">
+          notifications
+        </span>
+      </div>
     </div>
-    <span class="example-spacer"></span>
-    <div class="">
-        <span routerLink=""> Chi siamo </span>
-        <span routerLink=""> I miei viaggi </span>
-        <span routerLink=""> I miei amici </span>
-        <span routerLink=""> I miei gruppi </span>
-    </div>
-    <span class="example-spacer"></span>
-    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-
-      </button>
-      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-        <mat-icon>share</mat-icon>
-      </button>
-    </mat-toolbar-row>
-  </mat-toolbar>
-</p>
+  </div>
+</nav>
