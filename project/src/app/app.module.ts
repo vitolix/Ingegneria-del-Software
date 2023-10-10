@@ -11,13 +11,21 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { MyTravelsComponent } from './my-travels/my-travels.component';
+import { MyGroupsComponent } from './my-groups/my-groups.component';
+import { MyFriendsComponent } from './my-friends/my-friends.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    ProfileComponent
+    ProfileComponent,
+    AboutUsComponent,
+    MyTravelsComponent,
+    MyGroupsComponent,
+    MyFriendsComponent
   ],
   imports: [
     BrowserModule,
